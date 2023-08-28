@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
+  <style>
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+    body
+    {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: hsl(217, 54%, 11%);
+      font-family: "outfit";
+     
+    }
+
+    .container
+    {
+    
+      background-color:hsl(216, 50%, 16%);
+      box-sizing: border-box;
+      border-radius: 15px;
+      max-width: 360px;
+      padding: 20px;
+    }
+   .img-top
+   {
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+   }
+    .card .img-top img
+    {
+      width: 100%;
+  
+    }
+    .card .img-top .img-ovrly img
+    {
+      width: 50px;
+  
+    }
+    .img-ovrly
+    {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: hsla(178, 100%, 50%, 0.563);
+      display: none;
+
+    }
+    .img-ovrly img
+    {
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  .img-top:hover .img-ovrly
+  {
+    display: block;
+  }
+    h2
+    {
+      
+      color: hsl(0, 0%, 100%);
+    }
+    p
+    {
+      font-size: 18px;
+      color: hsl(215, 51%, 70%);
+    }
+    .text 
+    {
+      color: hsl(178, 100%, 50%);
+   
+    }
+  svg
+  {
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+  h2:hover
+  {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+  }
+ .photo span:hover
+  {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+  }
+.lft
+{
+  float: left;
+ 
+}
+.rght
+{
+  float: right;
+  color: hsl(215, 51%, 70%);
+  padding-bottom: 30px; 
+
+}
+hr
+{
+ border: 1px solid hsl(215, 32%, 27%);
+ margin-bottom: 20px;
+}
+.photo img
+{
+  width: 10%;
+  height: 10%;
+  border: 1px solid white;
+  border-radius: 50%;
+  float: left;
+  margin-bottom: 10px;
+
+}
+.photo p
+{
+position: relative;
+top: 3px;
+left: 15px;
+}
+.photo span
+{
+  color: white;
+}
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="img-top">
+<img src="images/image-equilibrium.jpg" alt="">
+<div class="img-ovrly">
+  <img src="images/icon-view.svg" alt="">
+</div>
+</div>
+    <h2>  Equilibrium #3429
+     </h2>
+     <p>Our Equilibrium collection promotes<br> balance and calm.</p>
+  
+  <div class="text">
+    <div class="lft">
+    <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>0.041ETH
+    </div>
+    <div class="rght">
+    <svg  width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>3 days left</div>
+    </div>
+<hr width="100%" size="1px" color="hsl(215, 32%, 27%)">
+<div class="photo">
+  <img src="images/image-avatar.png" alt="">
+<p>  Creation of <span>Jules Wyvern</span></p>
+</div>
+  </div>
+  </div>
+<!-- 
+  Equilibrium #3429
+
+  Our Equilibrium collection promotes balance and calm.
+
+  0.041 ETH
+  3 days left
+  
+  Creation of Jules Wyvern
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
